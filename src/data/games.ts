@@ -1,0 +1,66 @@
+import type { Game } from '@/types';
+import { colors } from '@/theme';
+
+/** Only trivia and tap are playable in the demo; the rest read "soon". */
+export const games: Game[] = [
+  {
+    id: 'trivia',
+    title: 'Baon Trivia',
+    blurb: 'Answer 5 quick Pinoy questions, bank the points.',
+    icon: 'help-circle',
+    tint: colors.accentTeal,
+    minReward: 40,
+    maxReward: 320,
+    status: 'playable',
+  },
+  {
+    id: 'tap',
+    title: 'Tap Rush',
+    blurb: 'Tap the coins before the timer runs out.',
+    icon: 'flash',
+    tint: colors.accentCoral,
+    minReward: 20,
+    maxReward: 150,
+    status: 'playable',
+  },
+  {
+    id: 'word',
+    title: 'Word Hunt',
+    blurb: 'Spell Taglish words for bonus baon.',
+    icon: 'text',
+    tint: colors.primary,
+    minReward: 30,
+    maxReward: 180,
+    status: 'soon',
+  },
+  {
+    id: 'match',
+    title: 'Match Mania',
+    blurb: 'Flip and match sponsor cards.',
+    icon: 'grid',
+    tint: colors.accentTeal,
+    minReward: 25,
+    maxReward: 160,
+    status: 'soon',
+  },
+  {
+    id: 'spin',
+    title: 'Daily Spin',
+    blurb: 'One free spin a day for surprise points.',
+    icon: 'disc',
+    tint: colors.primary,
+    minReward: 50,
+    maxReward: 500,
+    status: 'soon',
+  },
+  {
+    id: 'guess',
+    title: 'Price Guess',
+    blurb: 'Guess the palengke price, win baon.',
+    icon: 'bulb',
+    tint: colors.accentCoral,
+    minReward: 40,
+    maxReward: 200,
+    status: 'soon',
+  },
+];
